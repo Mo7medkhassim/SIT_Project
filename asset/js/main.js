@@ -3,6 +3,10 @@ window.addEventListener('load', function () {
     document.querySelector('.preloader').classList.add('hidePreloader');
 });
 
+
+// header 
+// alert(h);
+
 // function declaration 
 function sayHi() {
     console.log('Hello');
