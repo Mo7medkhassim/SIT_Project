@@ -3,6 +3,21 @@ window.addEventListener('load', function () {
     document.querySelector('.preloader').classList.add('hidePreloader');
 });
 
+// active link nav
+// get the container element
+var btnContiner = document.getElementById('navbarSupportedContent');
+// get the all a link
+let links = btnContiner.getElementsByClassName("nav-item");
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+        var current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        // console.log(current);
+    });
+};
+
+
 
 // header 
 // alert(h);
@@ -236,9 +251,9 @@ const filterCar = (() => {
             singleCar.forEach((car) => {
                 if (value === 'all') {
                     car.style.display = 'block';
-                }else {
-                    (!car.classList.contains(value)) ? car.style.display = 'none' : 
-                    car.style.display = 'block';
+                } else {
+                    (!car.classList.contains(value)) ? car.style.display = 'none' :
+                        car.style.display = 'block';
                 }
             })
             console.log(singleCar);

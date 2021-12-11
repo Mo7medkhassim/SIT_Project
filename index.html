@@ -34,10 +34,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div  class="collapse  navbar-collapse activeLink" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
@@ -528,6 +528,8 @@
     <!-- test monial section -->
     <script>
         $(document).ready(function () {
+
+             
             // scroll
             // $('#header').offset().top - 150;
             // target the whole a link
@@ -535,7 +537,7 @@
                 var myId = $(this).attr('href');
                 var t = $(myId).offset().top;
                 $("html,body").animate({
-                    scrollTop: t - 72.23
+                    scrollTop: t - 72.20
                 }, 2000);
                 // alert(t);
             })

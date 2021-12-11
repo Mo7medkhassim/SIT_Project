@@ -16,6 +16,10 @@ body {
     font-size: 16px;
 }
 
+.active a {
+    color: var(--mainBlue) !important;
+}
+
 /* preloader */
 .preloader {
     position: fixed;
@@ -60,10 +64,11 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0 ;
+    left: 0;
     z-index: 998;
     background: var(--mainWhite);
-  }
+}
+
 .nav-link {
     color: var(--mainBlack) !important;
 }
@@ -76,8 +81,30 @@ body {
     border: var(--mainBlue) !important;
 }
 
+.nav-item .nav-link {
+    position: relative;
+}
+
 .nav-link:hover {
     color: var(--mainBlue) !important;
+}
+
+.nav-item .nav-link:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-image: linear-gradient(120deg, #0074D6, #FB7D24);
+    transition: 0.5s;
+}
+
+.nav-item .nav-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
 }
 
 .nav-icon a {
@@ -209,9 +236,10 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-.car-card:hover{
+
+.car-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .car-value {
@@ -220,6 +248,7 @@ body {
     clip-path: polygon(15% 0, 85% 0, 100% 100%, 0 100%);
     transition: all 1s linear;
 }
+
 .car-img {
     transition: all 1s linear;
 }
@@ -409,29 +438,35 @@ body {
     padding: 1rem 0;
     font-size: 1rem;
 }
-.footer .nav-icon{
+
+.footer .nav-icon {
     color: var(--mainWhite) !important;
 }
 
 .footer .nav-icon:hover {
     color: var(--markColor) !important;
 }
+
 ul {
     padding: 0;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-.social-icon li  a{
+
+.social-icon li a {
     margin-left: 1.3rem;
     margin-right: 1.3rem;
     transition: all 1s ease-in-out;
     transform: translate(1.01);
 }
-.about-footer li a{
+
+.about-footer li a {
     text-decoration: none;
 }
-.about-footer li:hover a{
+
+.about-footer li:hover a {
     color: var(--mainWhite) !important;
 }
 
