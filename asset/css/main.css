@@ -104,7 +104,7 @@ body {
 
 /* header */
 .header {
-    margin-top: 72.23 !important;
+    /* margin-top: 72.23 !important; */
     background: var(--mainWhite);
     color: var(--mainWhite);
     overflow: hidden;
