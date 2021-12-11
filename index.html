@@ -17,12 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
-
-
 </head>
 
 <body>
-
     <!-- preloader -->
     <div class="preloader d-flex justify-content-center algin-items-center">
         <img src="asset/img/load.gif" alt="preloader">
@@ -49,7 +46,7 @@
                     <a class="nav-link" href="#inventory">Inventory</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#featured">Features</a>
                 </li>
 
             </ul>
@@ -170,19 +167,22 @@
             <!-- end of section title  -->
             <div class="row mb-5">
                 <div class="col-10 mx-auto col-md-12 d-flex justify-content-end">
-                    <button class="btn btn-outline-primary text-uppercase mx-1">
+                    <button class="btn btn-outline-primary text-uppercase mx-1 filter-btn " data-filter="all">
                         all
                     </button>
-                    <button class="btn btn-outline-primary text-uppercase mx-1">
+                    <button class="btn btn-outline-primary text-uppercase mx-1 filter-btn " data-filter="american">
                         american
                     </button>
-                    <button class="btn btn-outline-primary text-uppercase mx-1">
-                        german
+                    <button class="btn btn-outline-primary text-uppercase mx-1 filter-btn " data-filter="korean">
+                        korean
+                    </button>
+                    <button class="btn btn-outline-primary text-uppercase mx-1 filter-btn " data-filter="china">
+                        china
                     </button>
                 </div>
             </div>
             <!-- cars -->
-            <div class="row">
+            <div class="row inventory-container">
                 <!-- single car -->
                 <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
                     <div class="card car-card">
@@ -238,7 +238,7 @@
                 </div>
                 <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
                     <div class="card car-card">
-                        <img src="asset/img/slider3.png" class="card-img-top car-img" alt="car1">
+                        <img src="asset/img/car2.png" class="card-img-top car-img" alt="car1">
                         <!-- card body -->
                         <div class="card-body">
                             <div class="car-info d-flex justify-content-between">
@@ -363,7 +363,7 @@
                 <div class="col-10 col-lg-6 featuerd-img align-self-center mx-auto  my-3">
                     <!-- img-container -->
                     <div class="img-container">
-                        <img src="asset/img/photo1.jpg" class="img-fluid featured-photo" alt="featured-img">
+                        <img src="asset/img/car2.png" class="img-fluid featured-photo" alt="featured-img">
                         <a href="#" class="featured-link"><i class="bx bx-search-alt-2"></i></a>
                     </div>
                 </div>
@@ -463,7 +463,7 @@
                         <p>Mon – Fri: 8AM – 10PM</p>
                         <p>Sat: 9AM-8PM</p>
                         <p>Sun: Closed</p>
-                        <h4>We Work All The Holidays</h4>
+                        
                     </div>
                 </div>
                 <div class="col-12 col-sm-3 col-md-4">
@@ -517,16 +517,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+<!-- main js custom file  -->
     <script src="asset/js/main.js"></script>
-
     <!-- box icon js -->
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script> -->
     <!-- test monail -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-
+<!-- test monial section -->
     <script>
         $(document).ready(function () {
             $("#testimonial-slider").owlCarousel({

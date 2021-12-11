@@ -4,7 +4,7 @@
     --mainBlue: #2D88B4;
     --transparentBlue: rgb(92, 189, 238);
     --mainWhite: #FFFFFF;
-    --markColor: rgb(227, 181, 5);
+    --markColor: #FB7D24;
     --mainBlack: #292F36;
     --mainGrey: #1B2E3C;
 }
@@ -149,6 +149,7 @@ body {
 .title-icon {
     color: var(--mainBlue);
     text-decoration: none !important;
+    /* font-size: 2.5rem; */
 }
 
 .title-icon:hover {
@@ -253,7 +254,7 @@ body {
 
 /* question section */
 .question {
-    background: url('../img/photo1.jpg')center/ cover fixed no-repeat;
+    background: url('../img/slider4.jpg')center/ cover fixed no-repeat;
 }
 
 .question-grey {
@@ -323,6 +324,7 @@ body {
 
 .featured-photo {
     transition: all 1s ease-in-out;
+    background: var(--mainWhite);
 }
 
 .img-container:hover .featured-photo {
@@ -403,12 +405,25 @@ body {
 }
 
 .footer .nav-icon:hover {
-    color: var(--transparentBlue) !important;
+    color: var(--markColor) !important;
 }
-
-.social-icon li {
+ul {
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.social-icon li  a{
     margin-left: 1.3rem;
     margin-right: 1.3rem;
+    transition: all 1s ease-in-out;
+    transform: translate(1.01);
+}
+.about-footer li a{
+    text-decoration: none;
+}
+.about-footer li:hover a{
+    color: var(--mainWhite) !important;
 }
 
 /* end of footer */
